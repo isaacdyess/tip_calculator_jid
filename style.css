@@ -1,0 +1,22 @@
+.titlebar {
+  width: auto;
+  color: black;
+  font-size: 400%;
+  margin-bottom: 1%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 200%;
+  width: auto;
+  text-align: center;
+}
+
+input {
+  width: 7%;
+}
+
+.entries {
+  line-height: 230%;
+  text-align:center;
+}
