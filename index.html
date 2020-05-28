@@ -16,10 +16,21 @@
 
     <form class="entries" action="script.js">
       Enter Total Price: $<input type="text" id="cost" name="cost"><br>
-      Enter Tip Percentage: <input type="text" id="tip_pct" name="tip_pct">%<br>
-      <input type="button" onclick="tipCalculate()" value="Calculate Tip">
+
+      <label for="pcts">Choose a percentage: </label>
+      <input type="text" list="pcts" id="pct_value">
+      <datalist id="pcts">
+        <option value="15%"></option>
+        <option value="18%"></option>
+        <option value="20%"></option>
+        <option value="22%"></option>
+        <option value="25%"></option>
+      </datalist>
+      <br>
+      <input type="button" value="Calculate Tip" onclick="tipCalculate();" id="calcButton">
+
     </form>
-    
+
     <h2 id="output"></h2>
   </body>
 
