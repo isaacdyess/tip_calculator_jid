@@ -4,6 +4,11 @@ body {
   color: #213216;
 }
 
+input {
+  width: fit-content;
+  text-align: center;
+}
+
 .titlebar {
   width: auto;
   font-size: 400%;
@@ -13,17 +18,12 @@ body {
   letter-spacing: 200%;
 }
 
-h2 {
+.output {
   margin-top: 1%;
   font-size: 300%;
   width: auto;
   text-align: center;
   color: #e68a00;
-}
-
-input {
-  width: 7%;
-  text-align: center;
 }
 
 .entries {
@@ -32,9 +32,16 @@ input {
   text-align: center;
 }
 
+@media (max-width: 800px) {
+  body {
+    font-size: 150%;
+  }
+}
+
 #calcButton {
   border: none;
   text-decoration: none;
+  display: inline-block;
 }
 #calcButton:hover {
   box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 17px 50px 0 rgba(0,0,0,0.1);
